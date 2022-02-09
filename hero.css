@@ -94,6 +94,9 @@ section.diferenciais{
 .w33 h3{
     padding: 35px;
 }
+.w33 img{
+    border-radius: 50px;
+}
 .btnDownload{
     width: 150px;
     margin-top:10px;
@@ -153,7 +156,7 @@ section.diferenciais{
     }
    
     .nav_menu{
-        background-color: rgb(22, 20, 20);
+        background-image: linear-gradient(rgb(3, 10, 12), rgb(2, 101, 182), rgb(3, 10, 12));
         font-family: 'Slackey', cursive;
         display: grid;
         font-size: 20px;
@@ -222,6 +225,7 @@ section.diferenciais{
     }
    
     .w33 img{
+        border-radius: 50px;
         width: 255px;
         display: flex;
         margin-left: -10px;
