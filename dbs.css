@@ -115,6 +115,10 @@ section.diferenciais{
     border-radius: 50px;
     width: 500px;
 }
+.w33 a{
+    display: flex;
+    margin: auto;
+}
 .btnDownload{
     width: 150px;
     margin-top:  -25px;
