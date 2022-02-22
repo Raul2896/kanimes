@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 200px;
+    background: rgba(0,0,0,0.815);
+    width: 100%;
+    position: fixed;
+    z-index: 12;
+    flex-wrap: wrap;
+}
+
+.logo{
+    font-family: 'Slackey', cursive;
+    font-size: 90px;
+    padding: 0px;
+    margin-left: 0px;
+    text-align: center;
+}
+.logo a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.logo a:hover{
+    color: #fff;
+}
+
+
+
+.nav_menu{
+    font-family: 'Slackey', cursive;
+    display: grid;
+    font-size: 35px;
+    list-style: none;
+    padding: 15px;
+    text-align: center;  
+}
+.nav_menu h3{
+    color: whitesmoke;
+
+}
+
+.nav_menu li{display:inline-block;}
+
+.nav_menu li a{padding: 10px;}
+
+.nav_menu li a:hover{
+    background: rgb(66, 63, 63);
+    color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 5px;
+    border-width: auto;   
+}
+
+
+.nav_menu li ul{
+    font-size: 25px;
+    display: none;
+    position: absolute;
+    background: rgba(0,0,0,0.815);
+    padding: 20px;
+}
+.nav_menu li ul{
+    overflow-y: scroll;
+    height: 300px;
+}
+::-webkit-scrollbar{
+    background-color: rgb(0, 0, 0);
+    width: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(44, 41, 41);
+    
+}
+.nav_menu li ul a{
+    display:flex;
+    padding: 1px;
+}
+
+.nav_menu li:hover ul{display:block; display:grid;}
+
+section.banner{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding:100px;
+    font-family: 'Slackey', cursive;
+}
+section.diferenciais{
+    display: flex;
+    text-align: center;
+    background-image: linear-gradient(rgb(0, 0, 0),rgb(255, 198, 9),rgba(255, 149, 10, 0.945),rgb(255, 125, 4), rgb(255, 125, 4),rgb(255, 198, 9), rgb(0, 0, 0));
+    height: auto;
+    font-family: 'Slackey', cursive;
+    
+}
+.w33{
+    width: 100%;
+    padding:50px;
+    color: whitesmoke; 
+}
+.w33 h3{
+    padding: 40px;
+}
+.w33 img{
+    border-radius: 50px;
+}
+.w33 a{
+    display: flex;
+    margin: auto;
+    margin-top: -45px;
+}
+.btnDownload{
+    width: 150px;
+    margin-top:10px;
+    padding: 20px;
+    margin-left: 840px;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgb(255, 187, 0), rgb(255, 36, 36), rgb(24, 5, 5));
+    border-radius: 15px;
+    filter: drop-shadow(0px 0px 3px rgb(109, 109, 109));
+    font-family: 'Slackey', cursive;
+    text-decoration: none;
+    color: rgb(231, 235, 0);
+    transition: 0.3s;
+    user-select: none;
+}
+.btnDownload:hover{
+    background-color: #2e9215;
+}
+.btnDownload:active{
+    transition: 0s;
+    margin-bottom: 2px;
+}
+
+.down:nth-child(2){
+    margin-left: 5px;
+}
+
+.down:nth-child(1){
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+    .logo{
+        text-align: center;
+        width: 100%;
+        font-size: 50px;  
+        background-color: rgba(0,0,0,0.815);  
+        
+    }
+    header{
+        height: 300px;
+        background: rgba(0,0,0,0.815);
+        width: 100%;
+        position: fixed;
+        z-index: 12;
+        flex-wrap: wrap;
+      
+    }
+   
+    .nav_menu{
+        background-image: linear-gradient(rgb(0, 0, 0),rgb(255, 198, 9),rgba(255, 149, 10, 0.945),rgb(255, 125, 4), rgb(255, 125, 4),rgb(255, 198, 9), rgb(0, 0, 0));
+        font-family: 'Slackey', cursive;
+        display: grid;
+        font-size: 19px;
+        list-style: none;
+        padding: 0px;
+        text-align:center;
+        border-radius: 70px;
+       
+        
+    }
+    
+    .nav_menu li {
+       display: flex;
+       padding: 10px;
+       border-radius: 35px;
+       
+       
+    }
+    .nav_menu li ul{
+        padding: 5px;
+        text-align: center;
+        font-size: 17px;
+        margin: 50px;
+        border-radius: 20px;
+        background-color: rgb(0, 0, 0);
+        overflow-y: scroll;
+        height: 250px;
+    }
+    section.banner{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 180px;
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 90px 0;
+    }
+    section.diferenciais{
+        margin-top: 117px;
+        display: grid;
+        flex-wrap: wrap;
+        text-align: center;
+        background-image: linear-gradient(rgb(0, 0, 0),rgb(255, 198, 9),rgba(255, 149, 10, 0.945),rgb(255, 125, 4), rgb(255, 125, 4),rgb(255, 198, 9));
+        height: auto;
+        
+
+    }
+    .w33{
+        font-size: 25px;
+        margin-left: 15px;
+        text-align: center;
+        width: 100%;
+        padding: 0 10px;
+        color: whitesmoke;
+        
+    }
+    .w33 h2{
+        align-items: center;
+        text-align: center;
+        display:flex;
+        font-size: 30px;
+        padding: 10px;
+        margin-right: 25px; 
+    }
+    .w33 h3{
+        margin-right: 25px;
+        align-items: center;
+        display:inline-flexbox;
+        padding: 40px;
+        margin-bottom: -40px;
+    }
+   
+    .w33 img{
+        border-radius: 50px;
+        width: 344px;
+        display: flex;
+        margin-left: 0px;    
+    }
+    .w33 a{
+        text-align: center;
+        margin-left: 67px;
+        margin-top: -10px;
+    }
+    .btnDownload{
+        width: 213px;
+        margin-right: 30px;
+        margin-top:20px;
+        padding: 20px;
+        margin-left: 0px;
+        display: flex;
+        align-items:center;
+        background-image: linear-gradient(rgb(255, 187, 0), rgb(255, 36, 36), rgb(24, 5, 5));
+        border-radius: 15px;
+        filter: drop-shadow(0px 0px 3px rgb(109, 109, 109));
+        font-family: 'Slackey', cursive;
+        text-decoration: none;
+        text-align: center;
+        color: rgb(231, 235, 0);
+        transition: 0.3s;
+        user-select: none;
+    }
+    .btnDownload:hover{
+        background-color: #2e9215;
+    }
+    .btnDownload:active{
+        transition: 0s;
+        margin-bottom: 2px;
+    }
+    
+    .down:nth-child(2){
+        margin-left: 5px;
+    }
+    
+    .down:nth-child(1){
+        margin-right: 5px;
+    }
+    
+    
+
+}
+
+    
+    
+ 
+
+ 
+
